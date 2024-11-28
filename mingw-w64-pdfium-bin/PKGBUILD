@@ -1,5 +1,4 @@
-# Maintainer: Alexey Pavlov <alexpux@gmail.com>
-# Contributor: Martell Malone <martellmalone@gmail.com>
+# Maintainer: Antoine Martin <totaam@xpra.org>
 
 _realname=pdfium
 pkgbase=mingw-w64-${_realname}
