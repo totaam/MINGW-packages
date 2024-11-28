@@ -3,7 +3,7 @@
 _realname=pdfium
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}-bin"
-pkgver=130.0.6721.0
+pkgver=130.0.6858.0
 pkgrel=1
 pkgdesc="an open-source library for PDF manipulation and rendering (mingw-w64)"
 arch=('any')
@@ -14,8 +14,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
              "${MINGW_PACKAGE_PREFIX}-cmake"
              "${MINGW_PACKAGE_PREFIX}-ninja")
 depends=("${MINGW_PACKAGE_PREFIX}-gcc-libs")
-source=(https://github.com/bblanchon/pdfium-binaries/releases/download/chromium%2F6721/${_realname}-v8-win-x64.tgz)
-sha256sums=('6dd8a80c4d26a2755601209d9c63de227d4acf82ac7983f1821a81131e4a62d9')
+source=(https://github.com/bblanchon/pdfium-binaries/releases/download/chromium%2F6858/${_realname}-v8-win-x64.tgz)
+sha256sums=('9bbc01e49b81bdf161f2ad1bcc992d20b45ad695f7c8835c0e7b4a59c44270f7')
 
 package() {
   install -D -m755 "${srcdir}/bin/pdfium.dll" "${pkgdir}${MINGW_PREFIX}"/bin/pdfium.dll
